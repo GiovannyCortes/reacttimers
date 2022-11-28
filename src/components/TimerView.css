@@ -1,0 +1,29 @@
+.maincircle {
+    background-color: rgb(155, 155, 155);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    width: 60vw;
+    height: 60vw;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.valuecircle {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 70pt;
+    line-height: 80pt;
+    font-family: Glegoo;
+    font-weight: 700;
+}
+
