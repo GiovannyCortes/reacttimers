@@ -21,7 +21,7 @@ const Timer = () => {
     }, []);
 
     return (
-        <div className="timer">{minutes + ":" + ((seconds <= 9)? "0" : "") + seconds}</div>
+        <div className="timer">{((minutes <= 9)? "0" : "") + minutes + ":" + ((seconds <= 9)? "0" : "") + seconds}</div>
     );
 };
 export default Timer;

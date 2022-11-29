@@ -1,5 +1,7 @@
+/* ==================== CIRCLE STYLES ==================== */
 .maincircle {
-    background-color: rgb(155, 155, 155);
+    background-color: #3ECEFA;
+    color: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
@@ -11,6 +13,7 @@
     transform: translateY(-50%);
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .valuecircle {
@@ -27,3 +30,62 @@
     font-weight: 700;
 }
 
+.shadowcircle{
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.shadowcircle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 100vw #3E6BDE;
+}
+
+.shadowcircle:active:after {
+    box-shadow: 0 0 0 0 #3ECEFA;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+/* ==================== CIRCLE STYLES ==================== */
+
+.iconsvg {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+}
+
+.transX2 {
+    transform: translateX(2%);
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    opacity: 20%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
