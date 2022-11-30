@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 /* TEMPORAL */
 import Timer from './Timer';
+import PopUp from './PopUp';
 
 /* ASSETS */
 import playlogo from '../assets/images/play.svg';
@@ -13,7 +14,8 @@ import pauselogo from '../assets/images/pause.svg';
 export class TimerView extends Component {
     state = {
         time : 0,
-        statusPlay : true
+        statusPlay : true,
+        statusPopUp : false
     }
 
     changeStatusPlay = () => {
@@ -22,16 +24,27 @@ export class TimerView extends Component {
         });
     }
 
+    changeStatusPopUp = () => {
+        this.setState({
+            statusPopUp : true
+        });
+    }
+
     render() {
         return (
-            <div>   
+            <div>
+                {
+                    this.state.statusPopUp && (
+                        <PopUp />
+                    )
+                }
                 <header>
-                    <nav style={{"backgroundColor":"blue", "height":"50px", "marginTop":"10px"}}>
+                    <div style={{"backgroundColor":"blue", "height":"50px"}}>
                         mi bar
-                    </nav>
-                    <a className='mainsala' href='/'>
+                    </div>
+                    <button className='mainsala' onClick={ () => this.changeStatusPopUp() }>
                         SALA 1
-                    </a>
+                    </button>
                 </header>
                 <div className='maincircle mainshadow shadowcircle' onClick={ () => this.changeStatusPlay() }>
                     <span className='valuecircle noselect'>
