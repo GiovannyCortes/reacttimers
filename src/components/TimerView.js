@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './TimerView.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
+/* TEMPORAL */
 import Timer from './Timer';
 
 /* ASSETS */
-import mivideo from '../assets/movies/video.mp4';
 import playlogo from '../assets/images/play.svg';
 import pauselogo from '../assets/images/pause.svg';
 
@@ -22,13 +24,18 @@ export class TimerView extends Component {
 
     render() {
         return (
-            <div>
-                <div className="video-container">
-                    <video src={mivideo} autoPlay loop muted/>
-                </div>
-                <div className='maincircle shadow shadowcircle' onClick={ () => this.changeStatusPlay() }>
+            <div>   
+                <header>
+                    <nav style={{"backgroundColor":"blue", "height":"50px", "marginTop":"10px"}}>
+                        mi bar
+                    </nav>
+                    <a className='mainsala' href='/'>
+                        SALA 1
+                    </a>
+                </header>
+                <div className='maincircle mainshadow shadowcircle' onClick={ () => this.changeStatusPlay() }>
                     <span className='valuecircle noselect'>
-                        <Timer />
+                        <Timer /> {/* SOLO NECESITO UN DIV CON EL VALOR DE TIEMPO (mm:ss) ejemplo: 15:27 */}
                     </span>
                     {
                         this.state.statusPlay === true?

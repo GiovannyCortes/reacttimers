@@ -1,12 +1,62 @@
+/* @media screen and (min-width: 700px) and (orientation: landscape) {
+    
+} */
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    /*
+        VISTA V1 (PEQUEÑA) PARA DISPOSITIVOS MÓVILES PEQUEÑOS
+    */
+    .maincircle {
+        min-width: 260px;
+        min-height: 260px;
+        width: 55vw;
+        height: 55vw;
+    }
+    .valuecircle {
+        font-size: 55pt;
+        line-height: 65pt;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) {
+    /*
+        VISTA V2 (MEDIANA) PARA DISPOSITIVOS MÓVILES MEDIANOS
+    */
+    .maincircle {
+        min-width: 300px;
+        min-height: 300px;
+        width: 60vw;
+        height: 60vw;
+    }
+    .valuecircle {
+        font-size: 70pt;
+        line-height: 80pt;
+    }
+}
+
+
+
+
+@media screen and (min-width: 417px) and (orientation: portrait) {
+    .maincircle {
+        min-width: 300px;
+        min-height: 300px;
+        width: 60vw;
+        height: 60vw;
+    }
+    .valuecircle {
+        font-size: 70pt;
+        line-height: 80pt;
+    }
+}
+
 /* ==================== CIRCLE STYLES ==================== */
 .maincircle {
-    background-color: #3ECEFA;
+    background-color: var(--main_blue);
     color: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    width: 60vw;
-    height: 60vw;
     left: 0;
     right: 0;
     top: 50%;
@@ -24,8 +74,6 @@
     left: 0;
     transform: translateY(-50%);
     text-align: center;
-    font-size: 70pt;
-    line-height: 80pt;
     font-family: Glegoo;
     font-weight: 700;
 }
@@ -46,11 +94,11 @@
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 100vw #3E6BDE;
+    box-shadow: 0 0 10px 120vw var(--shadow_blue);
 }
 
 .shadowcircle:active:after {
-    box-shadow: 0 0 0 0 #3ECEFA;
+    box-shadow: 0 0 30px 10px var(--main_blue);
     position: absolute;
     border-radius: 50%;
     left: 0;
@@ -60,6 +108,7 @@
 }
 /* ==================== CIRCLE STYLES ==================== */
 
+/* ===================== ICON STYLES ===================== */
 .iconsvg {
     display: inline-block;
     padding: 0;
@@ -70,22 +119,48 @@
     left: 0;
     bottom: 15%;
 }
+/* ===================== ICON STYLES ===================== */
 
+/* ==================== TOOLS STYLES ==================== */
 .transX2 {
     transform: translateX(2%);
 }
 
-.video-container {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    opacity: 20%;
+.mainshadow {
+    -webkit-box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
+}
+/* ==================== TOOLS STYLES ==================== */
+
+
+/* ===================== SALA STYLES ===================== */
+.mainsala {
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    margin: 25px auto 0 auto;
+    padding: 8px;
+    text-decoration: none;
+    font-family: Nexa;
+    font-weight: 1000;
+    font-size: 25px;
+    width: 60vw;
+    color: white;
+    background-color: var(--main_orange);
 }
 
-.video-container video {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: 0;
+.mainsala:hover {
+    -webkit-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    -moz-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    color: white;
 }
+
+.mainsala:active {
+    -webkit-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    -moz-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    box-shadow: inset 0px 0px 20px 5px var(--main_brown);
+    color: var(--main_brown);
+}
+/* ===================== SALA STYLES ===================== */

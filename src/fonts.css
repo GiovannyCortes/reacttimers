@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Glegoo';
+    src: url('fonts/Glegoo-Regular.ttf')format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Glegoo';
+    src: url('fonts/Glegoo-Bold.ttf')format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa/Nexa-Trial-Bold.ttf')format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa/Nexa-Trial-ExtraBold.ttf')format('truetype');
+    font-style: normal;
+    font-weight: 1000;
+}
