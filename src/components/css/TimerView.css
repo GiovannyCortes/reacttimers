@@ -1,32 +1,60 @@
-/* @media screen and (min-width: 700px) and (orientation: landscape) {
-    
-} */
+/* ==================================== PRIMERA TIRADA PEQUEÑO (EN PROCESO) ==================================== */
+@media screen and (max-width: 375px) and (orientation: portrait) and (max-height: 700px) {
+    .maincircle {
+        min-width: 200px;
+        min-height: 200px;
+        width: 45vw;
+        height: 45vw;
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    .valuecircle {
+        font-size: 45pt;
+        line-height: 55pt;
+    }
+}
 
-@media screen and (max-width: 375px) and (orientation: portrait) {
-    /*
-        VISTA V1 (PEQUEÑA) PARA DISPOSITIVOS MÓVILES PEQUEÑOS
-    */
+@media screen and (max-width: 375px) and (orientation: portrait) and (min-height: 701px){
     .maincircle {
         min-width: 260px;
         min-height: 260px;
         width: 55vw;
         height: 55vw;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .valuecircle {
         font-size: 55pt;
         line-height: 65pt;
     }
 }
+/* ==================================== PRIMERA TIRADA PEQUEÑO (EN PROCESO) ==================================== */
 
-@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) {
-    /*
-        VISTA V2 (MEDIANA) PARA DISPOSITIVOS MÓVILES MEDIANOS
-    */
+
+/* ==================================== SEGUNDA TIRADA DEFAULT (EN PROCESO) ==================================== */
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (max-height: 700px) {
+    .maincircle {
+        min-width: 200px;
+        min-height: 200px;
+        width: 40vw;
+        height: 40vw;
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    .valuecircle {
+        font-size: 50pt;
+        line-height: 60pt;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 701px) and (max-height: 850px) {
     .maincircle {
         min-width: 300px;
         min-height: 300px;
         width: 60vw;
         height: 60vw;
+        top: 60%;
+        transform: translateY(-60%);
     }
     .valuecircle {
         font-size: 70pt;
@@ -34,8 +62,24 @@
     }
 }
 
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 851px) {
+    .maincircle {
+        min-width: 300px;
+        min-height: 300px;
+        width: 60vw;
+        height: 60vw;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .valuecircle {
+        font-size: 70pt;
+        line-height: 80pt;
+    }
+}
+/* ==================================== SEGUNDA TIRADA DEFAULT (EN PROCESO) ==================================== */
 
 
+/* PANTALLAS GRANDES (EN PROCESO) */
 
 @media screen and (min-width: 417px) and (orientation: portrait) {
     .maincircle {
@@ -43,6 +87,8 @@
         min-height: 300px;
         width: 60vw;
         height: 60vw;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .valuecircle {
         font-size: 70pt;
@@ -59,8 +105,6 @@
     border-radius: 50%;
     left: 0;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -140,7 +184,7 @@
     display: block;
     border-radius: 25px;
     text-align: center;
-    margin: 25px auto 0 auto;
+    margin: 15px auto 0 auto;
     padding: 8px;
     text-decoration: none;
     font-family: Nexa;

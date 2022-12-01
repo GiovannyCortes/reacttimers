@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 /* TEMPORAL */
 import Timer from './Timer';
+
+/* SUBCOMPONENTES */
 import PopUp from './PopUp';
 import Menu from './Menu';
 

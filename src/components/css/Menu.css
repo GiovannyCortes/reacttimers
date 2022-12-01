@@ -1,7 +1,7 @@
 .menubar {
     display: block;
     width: 90%;
-    height: 64px;
+    height: 70px;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
     margin: 0;
     border: 5px solid white;
     border-radius: 50%;
-    padding: 12px;
+    padding: 15px;
     position: absolute;
     z-index: 2;
 }
@@ -23,16 +23,23 @@
     color: white;
 }
 
-.menubar > p {
+.menutag {
     background-color: var(--middle_gray);
     display: inline-block;
     width: 100%;
     border-radius: 25px;
     padding: 10px 20px;
-    margin: auto;
     text-align: right;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    font-family: Nexa;
+    font-size: larger;
+}
+
+.menutag > span {
+    display: inline-block;
+    width: 80px;
+    text-align: left;
 }
