@@ -8,12 +8,13 @@ import Timer from './Timer';
 import PopUp from './PopUp';
 
 /* ASSETS */
-import playlogo from '../assets/images/play.svg';
-import pauselogo from '../assets/images/pause.svg';
+// import playlogo from '../assets/images/play.svg';
+// import pauselogo from '../assets/images/pause.svg';
 
 export class TimerView extends Component {
     state = {
         time : 0,
+        room_name : "SALA",
         statusPlay : true,
         statusPopUp : false
     }
@@ -26,7 +27,13 @@ export class TimerView extends Component {
 
     changeStatusPopUp = () => {
         this.setState({
-            statusPopUp : true
+            statusPopUp : !this.state.statusPopUp
+        });
+    }
+
+    changeRoomName = (name) => {
+        this.setState({
+            room_name : name
         });
     }
 
@@ -35,27 +42,41 @@ export class TimerView extends Component {
             <div>
                 {
                     this.state.statusPopUp && (
-                        <PopUp />
+                        <PopUp changeStatusPopUp={this.changeStatusPopUp} changeRoomName={this.changeRoomName}/>
                     )
                 }
                 <header>
-                    <div style={{"backgroundColor":"blue", "height":"50px"}}>
-                        mi bar
+                    <div className='navbar noselect'>
+                        *** Espacio para navbar
                     </div>
-                    <button className='mainsala' onClick={ () => this.changeStatusPopUp() }>
-                        SALA 1
+                    <button className='mainsala noselect' onClick={ () => this.changeStatusPopUp() }>
+                        {this.state.room_name}
                     </button>
+                    <p className='maincompany noselect'>
+                        <b>Está hablando:</b><br/><i>Nombre de la empresa</i>
+                    </p>
                 </header>
                 <div className='maincircle mainshadow shadowcircle' onClick={ () => this.changeStatusPlay() }>
                     <span className='valuecircle noselect'>
                         <Timer /> {/* SOLO NECESITO UN DIV CON EL VALOR DE TIEMPO (mm:ss) ejemplo: 15:27 */}
                     </span>
-                    {
+                    {/* {
                         this.state.statusPlay === true?
                             (<img src={playlogo} alt="Logo de Play" className="iconsvg noselect transX2"/>) :
                             (<img src={pauselogo} alt="Logo de Pause" className="iconsvg noselect"/>)
-                    }
+                    } */}
                 </div>
+                <footer className='noselect'>
+                    <b>Siguiente:</b>
+                    <p>
+                        <i>Nombre de la empresa </i>
+                        (WORK)
+                    </p>
+                    <p>
+                        <i>Nombre de la empresa </i>
+                        (WORK)
+                    </p>
+                </footer>
             </div>
         )
     }

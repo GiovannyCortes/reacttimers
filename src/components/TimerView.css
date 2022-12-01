@@ -64,6 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    z-index: 9;
 }
 
 .valuecircle {
@@ -127,9 +128,9 @@
 }
 
 .mainshadow {
-    -webkit-box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 75px 10px rgba(0,0,0,0.75), 0px 0px 35px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.75), 0px 0px 35px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.75), 0px 0px 35px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 30px 1px rgba(0,0,0,0.75), 0px 0px 35px 1px rgba(0,0,0,0.75);
 }
 /* ==================== TOOLS STYLES ==================== */
 
@@ -144,24 +145,59 @@
     text-decoration: none;
     font-family: Nexa;
     font-weight: 1000;
-    font-size: 25px;
+    font-size: 30px;
     width: 60vw;
     color: white;
-    background-color: var(--main_orange);
+    background-color: var(--shadow_blue);
     border: none;
+    box-shadow: 0 4px 0 1px rgb(192, 192, 192);
 }
 
 .mainsala:hover {
-    -webkit-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    -moz-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    color: white;
+    box-shadow: none;
+    transform: translateY(4px);
 }
 
 .mainsala:active {
-    -webkit-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    -moz-box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    box-shadow: inset 0px 0px 20px 5px var(--main_brown);
-    color: var(--main_brown);
+    box-shadow: none;
+    transform: translateY(4px);
 }
 /* ===================== SALA STYLES ===================== */
+
+/* ================= COMPANY TEXT STYLES ================= */
+.maincompany {
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+}
+/* ================= COMPANY TEXT STYLES ================= */
+
+/* ==================== NAVBAR STYLES ==================== */
+.navbar {
+    background-color: var(--light_gray);
+    height: 80px;
+}
+/* ==================== NAVBAR STYLES ==================== */
+
+/* ==================== FOOTER STYLES ==================== */
+footer {
+    background-color: var(--light_gray);
+    border-radius: 25px 25px 0 0;
+    border-top: 5px solid var(--shadow_blue);
+    height: 150px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    font-size: larger;
+}
+
+footer > b {
+    display: inline-block;
+    margin: 20px 0 10px 30px;
+}
+
+footer > p {
+    text-align: center;
+    margin: 0;
+}
+/* ==================== FOOTER STYLES ==================== */

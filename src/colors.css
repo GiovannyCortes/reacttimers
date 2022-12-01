@@ -3,16 +3,11 @@
     --shadow_blue : #3E6BDE;
     --main_orange : #FA823E;
     --main_brown : #AD5B09;
+    --light_gray : rgb(240, 240, 240);
+    --s01 : #1A2E5E;
+    --s02 : #2C4D9E;
+    --s03 : #3E6BDE;
+    --s04 : #7ea3ff;
+    --s05 : #b9cdff;
 }
 
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.green {
-    background-color: green;
-}
