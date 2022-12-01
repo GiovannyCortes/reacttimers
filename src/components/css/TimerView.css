@@ -172,13 +172,6 @@
 }
 /* ================= COMPANY TEXT STYLES ================= */
 
-/* ==================== NAVBAR STYLES ==================== */
-.navbar {
-    background-color: var(--light_gray);
-    height: 80px;
-}
-/* ==================== NAVBAR STYLES ==================== */
-
 /* ==================== FOOTER STYLES ==================== */
 footer {
     background-color: var(--light_gray);

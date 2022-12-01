@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './TimerView.css';
+import './css/TimerView.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 /* TEMPORAL */
 import Timer from './Timer';
 import PopUp from './PopUp';
+import Menu from './Menu';
 
 /* ASSETS */
 // import playlogo from '../assets/images/play.svg';
@@ -47,7 +48,7 @@ export class TimerView extends Component {
                 }
                 <header>
                     <div className='navbar noselect'>
-                        *** Espacio para navbar
+                        <Menu />
                     </div>
                     <button className='mainsala noselect' onClick={ () => this.changeStatusPopUp() }>
                         {this.state.room_name}

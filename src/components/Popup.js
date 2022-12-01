@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PopUp.css';
+import './css/PopUp.css';
 
 export class PopUp extends Component {
     nindex = 0;
