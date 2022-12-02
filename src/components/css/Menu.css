@@ -1,3 +1,15 @@
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .menutag {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 376px) and (orientation: portrait) {
+    .menutag {
+        font-size: large;
+    }
+}
+
 .menubar {
     display: block;
     width: 90%;
@@ -35,7 +47,6 @@
     transform: translateY(-50%);
     z-index: 1;
     font-family: Nexa;
-    font-size: larger;
 }
 
 .menutag > span {
@@ -43,3 +54,19 @@
     width: 80px;
     text-align: left;
 }
+
+.background_black {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+  
+  .background_black_show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+  }

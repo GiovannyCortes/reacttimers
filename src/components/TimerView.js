@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import Timer from './Timer';
 
 /* SUBCOMPONENTES */
-import PopUp from './PopUp';
+import SalaPopUp from './SalaPopUp';
 import Menu from './Menu';
 
 /* ASSETS */
@@ -19,7 +19,7 @@ export class TimerView extends Component {
         time : 0,
         room_name : "SALA",
         statusPlay : true,
-        statusPopUp : false
+        statusSalaPopUp : false
     }
 
     changeStatusPlay = () => {
@@ -28,9 +28,9 @@ export class TimerView extends Component {
         });
     }
 
-    changeStatusPopUp = () => {
+    changeStatusSalaPopUp = () => {
         this.setState({
-            statusPopUp : !this.state.statusPopUp
+            statusSalaPopUp : !this.state.statusSalaPopUp
         });
     }
 
@@ -44,15 +44,15 @@ export class TimerView extends Component {
         return (
             <div>
                 {
-                    this.state.statusPopUp && (
-                        <PopUp changeStatusPopUp={this.changeStatusPopUp} changeRoomName={this.changeRoomName}/>
+                    this.state.statusSalaPopUp && (
+                        <SalaPopUp changeStatusSalaPopUp={this.changeStatusSalaPopUp} changeRoomName={this.changeRoomName} />
                     )
                 }
                 <header>
-                    <div className='navbar noselect'>
+                    <div className='noselect' style={{"marginTop":"10px"}}>
                         <Menu />
                     </div>
-                    <button className='mainsala noselect' onClick={ () => this.changeStatusPopUp() }>
+                    <button className='mainsala noselect' onClick={ () => this.changeStatusSalaPopUp() }>
                         {this.state.room_name}
                     </button>
                     <p className='maincompany noselect'>

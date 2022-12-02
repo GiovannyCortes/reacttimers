@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './css/PopUp.css';
+import './css/SalaPopUp.css';
 
-export class PopUp extends Component {
+export class SalaPopUp extends Component {
     nindex = 0;
     state = {
         salas : [ "SALA 1", "SALA 2", "SALA 3", "SALA 4", "SALA 5", "SALA 6", "SALA 7", "SALA 8", "SALA 9", "SALA 10", "SALA 11"]
     }
 
-    exit = () => { this.props.changeStatusPopUp(); }
+    exit = () => { this.props.changeStatusSalaPopUp(); }
     changeRoom = (name) => { 
         this.props.changeRoomName(name);
         this.exit();
@@ -40,4 +40,4 @@ export class PopUp extends Component {
     }
 }
 
-export default PopUp;
+export default SalaPopUp;

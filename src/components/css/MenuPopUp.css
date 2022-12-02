@@ -1,0 +1,76 @@
+/* =============================== SIDEMENU STYLE =============================== */
+.menupopup-box-component {
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--light_gray);
+    z-index: 12;
+    position: absolute;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transform: translateX(-80vw) translateY(-10px);
+    border-right: 5px solid var(--shadow_blue);
+}
+
+.menupopup-box-component-show {
+    transform: translateX(0) translateY(-10px);
+}
+/* =============================== SIDEMENU STYLE =============================== */
+
+/* =============================== ICON BACK STYLE =============================== */
+.menupopup-back {
+    border: 0;
+    width: 220px;
+    margin: 20px 15px;
+    background-color:rgba(0, 0, 0, 0.0);
+    text-align: left;
+    transition: 0.4s;
+}
+
+.menupopup-back > i {
+    font-family: Nexa;
+    font-size: large;
+    padding-left: 15px;
+}
+
+.menupopup-back > img {
+    width: 52px;
+    vertical-align: text-bottom;
+    filter: invert(32%) sepia(63%) saturate(2586%) hue-rotate(215deg) brightness(94%) contrast(84%);
+}
+
+.menupopup-back:hover, .menupopup-back:active {
+    transform: translateX(20px);
+}
+/* =============================== ICON BACK STYLE =============================== */
+
+/* =============================== MENU ITEMS STYLE =============================== */
+.menupopup-box-items {
+    background-color: red;
+    width: 100%;
+}
+
+.menupopup-box-items > a {
+    background-color: var(--light_gray);
+    text-decoration: none;
+    font-family: Nexa;
+    font-weight: 100;
+    font-size: large;
+    color: var(--strong_gray);
+    display: inline-block;
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 2px solid var(--strong_gray);
+    transition: 0.2s;
+}
+
+.menupopup-box-items > a:first-of-type  {
+    border-top: 2px solid var(--strong_gray);
+}
+
+.menupopup-box-items > a:hover, .menupopup-box-items > a:active {
+    background-color: var(--strong_gray);
+    color: white;
+}
+/* =============================== MENU ITEMS STYLE =============================== */
