@@ -8,7 +8,6 @@ import Timer from './Timer';
 
 /* SUBCOMPONENTES */
 import SalaPopUp from './SalaPopUp';
-import Menu from './Menu';
 
 export class TimerView extends Component {
     state = {
@@ -38,13 +37,6 @@ export class TimerView extends Component {
                     )
                 }
                 <header>
-                    <div className='noselect' style={{"marginTop":"10px"}}>
-                         {/* 
-                            El menú estará en pantalla en todo momento.
-                            Es posible que en las siguientes versiones se traslade este componente a index.js
-                         */}
-                        <Menu />
-                    </div>
                     <button className='mainsala noselect' onClick={ () => this.changeStatusSalaPopUp() }>
                         {this.state.room_name}
                     </button>
@@ -69,7 +61,7 @@ export class TimerView extends Component {
                 <div className='maincircle mainshadow shadowcircle'>
                     <span className='valuecircle noselect'>
                         {/* 
-                            #1 (GIO) TO (GUTI) ->
+                            #1 (GIO) TO (GUTI/SERGIO) ->
                             Resumen: NECESITO UN DIV CON EL VALOR DE TIEMPO (mm:ss) 
                             Ejemplo: <div>15:27</div>
                         */}

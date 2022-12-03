@@ -29,6 +29,13 @@ export class Menu extends Component {
                     <button className='menucircle' onClick={this.showHiddenMenu}>
                         <img src={menuicon} alt="Icono de tres líneas para el menú"/>
                     </button>
+                    {/* 
+                        #1 (GIO) TO (GUTI/SERGIO) ->
+                        Resumen: NECESITO UN DIV CON EL VALOR DE TIEMPO HASTA EL FIN DEL EVENTO (hh:mm:ss) 
+                        Ejemplo: <div>07:15:27</div>
+                        A tener en cuentra: Si aún no se ha configurado el horario (por ende no hay hora 
+                        fin del evento) deberíamos deshabilitar esa información.
+                    */}
                     <b className='menutag'>Tiempo restante... <span><Timer2 /></span></b>
                 </div>
             </div>

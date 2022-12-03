@@ -20,42 +20,30 @@
 
 /* =============================== ICON BACK STYLE =============================== */
 .menupopup-back {
+    width: 55px;
+    float: right;
     border: 0;
-    width: 220px;
-    margin: 20px 15px;
+    padding: 15px;
+    margin: 10px 5px;
     background-color:rgba(0, 0, 0, 0.0);
-    text-align: left;
-    transition: 0.4s;
-}
-
-.menupopup-back > i {
-    font-family: Nexa;
-    font-size: large;
-    padding-left: 15px;
 }
 
 .menupopup-back > img {
-    width: 52px;
-    vertical-align: text-bottom;
-    filter: invert(32%) sepia(63%) saturate(2586%) hue-rotate(215deg) brightness(94%) contrast(84%);
-}
-
-.menupopup-back:hover, .menupopup-back:active {
-    transform: translateX(20px);
+    max-width: 25px;
+    filter: invert(45%) sepia(38%) saturate(4%) hue-rotate(314deg) brightness(96%) contrast(96%);
 }
 /* =============================== ICON BACK STYLE =============================== */
 
 /* =============================== MENU ITEMS STYLE =============================== */
 .menupopup-box-items {
-    background-color: red;
     width: 100%;
 }
 
 .menupopup-box-items > a {
     background-color: var(--light_gray);
     text-decoration: none;
-    font-family: Nexa;
-    font-weight: 100;
+    font-family: Share;
+    font-weight: 700;
     font-size: large;
     color: var(--strong_gray);
     display: inline-block;

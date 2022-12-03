@@ -5,7 +5,7 @@ import './css/MenuPopUp.css';
     En la medida de lo posible, trabajaremos con SVG para no cargar la App 
     con peso innecesario de imagenes para formas o iconos.
 */
-import arrowleft from '../assets/arrowleft.svg';
+import closeicon from '../assets/closeicon.svg';
 
 export class MenuPopUp extends Component {
 
@@ -15,8 +15,7 @@ export class MenuPopUp extends Component {
         return (
             <div className='menupopup-box-component' id='sidemenu'>
                 <button className='menupopup-back' onClick={this.exit}>
-                    <img src={arrowleft} alt="Flecha izquierda"/>
-                    <i>Close NavBar</i>
+                    <img src={closeicon} alt="Icono de cierre"/>
                 </button>
                 <div className='menupopup-box-items'> {/* Zona de redirección */}
                     <a href='/'>Timer</a>             {/* Pantalla principal */}

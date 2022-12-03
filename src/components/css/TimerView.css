@@ -1,5 +1,5 @@
 /* ==================================== PRIMERA TIRADA PEQUEÑO (EN PROCESO) ==================================== */
-@media screen and (max-width: 375px) and (orientation: portrait) and (max-height: 700px) {
+@media screen and (max-width: 376px) and (orientation: portrait) and (max-height: 700px) {
     .maincircle {
         min-width: 200px;
         min-height: 200px;
@@ -14,7 +14,22 @@
     }
 }
 
-@media screen and (max-width: 375px) and (orientation: portrait) and (min-height: 701px){
+@media screen and (max-width: 376px) and (orientation: portrait) and (min-height: 700px) and (max-height: 790px){
+    .maincircle {
+        min-width: 260px;
+        min-height: 260px;
+        width: 55vw;
+        height: 55vw;
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    .valuecircle {
+        font-size: 55pt;
+        line-height: 65pt;
+    }
+}
+
+@media screen and (max-width: 376px) and (orientation: portrait) and (min-height: 790px){
     .maincircle {
         min-width: 260px;
         min-height: 260px;
@@ -47,7 +62,7 @@
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 701px) and (max-height: 850px) {
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 700px) and (max-height: 850px) {
     .maincircle {
         min-width: 300px;
         min-height: 300px;
@@ -62,7 +77,7 @@
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 851px) {
+@media screen and (min-width: 376px) and (max-width: 416px) and (orientation: portrait) and (min-height: 850px) {
     .maincircle {
         min-width: 300px;
         min-height: 300px;
@@ -79,9 +94,8 @@
 /* ==================================== SEGUNDA TIRADA DEFAULT (EN PROCESO) ==================================== */
 
 
-/* PANTALLAS GRANDES (EN PROCESO) */
-
-@media screen and (min-width: 417px) and (orientation: portrait) {
+/* ==================================== TERCERA TIRADA GRANDES (EN PROCESO) ==================================== */
+@media screen and (min-width: 417px) and (orientation: portrait) and (max-height: 700px) {
     .maincircle {
         min-width: 300px;
         min-height: 300px;
@@ -95,6 +109,23 @@
         line-height: 80pt;
     }
 }
+
+@media screen and (min-width: 417px) and (orientation: portrait) and (min-height: 700px) and (max-height: 850px) {
+    .maincircle {
+        min-width: 250px;
+        min-height: 250px;
+        width: 50vw;
+        height: 50vw;
+        top: 58%;
+        transform: translateY(-58%);
+    }
+    .valuecircle {
+        font-size: 55pt;
+        line-height: 65pt;
+    }
+}
+/* ==================================== TERCERA TIRADA GRANDES (EN PROCESO) ==================================== */
+
 
 /* ==================== CIRCLE STYLES ==================== */
 .maincircle {
