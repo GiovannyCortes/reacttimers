@@ -13,6 +13,17 @@ export class SalaPopUp extends Component {
         this.exit();
     }
 
+    /*
+        #1 (GIO) TO (SERGIO) ->
+        Resumen: NECESITO UN MÉTODO QUE CARGUE (AL CONSTRUIR EL COMPONENTE) EN EL OBJETO 'salas'
+        UN ARRAY CON LOS NOMBRES DE TODAS LAS SALAS A MOSTRAR.
+
+        Explicación: Este componente controla un menú emergente en la pantalla principal. Su 
+        función es que el usuario pueda cambiar su vista de sala actual a cualquier otra creada.
+        El componente ya se encarga de crear estos controles (da igual si hay más controles que
+        espacio en el menu, este controla el desbordamiento de salas y te permite realizar scroll).
+    */
+
     render() {
         return (
             <div className='box-component'>
