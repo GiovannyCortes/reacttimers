@@ -8,7 +8,8 @@
     --bkg_button_sala                : #FFFFFF;           /* rgb(255, 255, 255) */
     --clr_button_sala                : var(--blue_primary); /* rgb(62, 107, 222)  */
     --bkg_footer_timer               : var(--light_gray);   /* rgb(240, 240, 240) */
-    
+    --bdr_footer_timer               : var(--blue_primary); /* rgb(62, 107, 222) */
+
     --bkg_popup_salas  : #FFFFFF;           /* rgb(255, 255, 255) */
     --clr_popup_salas  : #FFFFFF;           /* rgb(255, 255, 255) */
 

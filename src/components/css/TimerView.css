@@ -246,7 +246,7 @@
 footer {
     background-color: var(--bkg_footer_timer);
     border-radius: 25px 25px 0 0;
-    border-top: 5px solid var(--shadow_blue);
+    border-top: 5px solid var(--bdr_footer_timer);
     height: 150px;
     width: 100vw;
     position: absolute;
