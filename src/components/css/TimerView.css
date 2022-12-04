@@ -129,8 +129,8 @@
 
 /* ==================== CIRCLE STYLES ==================== */
 .maincircle {
-    background-color: var(--main_blue);
-    color: white;
+    background-color: var(--bkg_circle_timer);
+    color: var(--clr_circle_timer);
     display: inline-block;
     position: absolute;
     border-radius: 50%;
@@ -170,11 +170,11 @@
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 120vw var(--shadow_blue);
+    box-shadow: 0 0 10px 120vw var(--shw_circle_timer_after);
 }
 
 .shadowcircle:active:after {
-    box-shadow: 0 0 30px 10px var(--main_blue);
+    box-shadow: 0 0 30px 10px var(--shw_circle_timer_after_active);
     position: absolute;
     border-radius: 50%;
     left: 0;
@@ -222,18 +222,13 @@
     font-weight: 1000;
     font-size: 30px;
     width: 60vw;
-    color: white;
-    background-color: var(--shadow_blue);
+    color: var(--bkg_button_sala);
+    background-color: var(--clr_button_sala);
     border: none;
-    box-shadow: 0 4px 0 1px rgb(192, 192, 192);
+    box-shadow: 0 4px 0 1px var(--btn_bottom_shw);
 }
 
-.mainsala:hover {
-    box-shadow: none;
-    transform: translateY(4px);
-}
-
-.mainsala:active {
+.mainsala:hover, .mainsala:active {
     box-shadow: none;
     transform: translateY(4px);
 }
@@ -249,7 +244,7 @@
 
 /* ==================== FOOTER STYLES ==================== */
 footer {
-    background-color: var(--light_gray);
+    background-color: var(--bkg_footer_timer);
     border-radius: 25px 25px 0 0;
     border-top: 5px solid var(--shadow_blue);
     height: 150px;

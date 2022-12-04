@@ -18,7 +18,7 @@
 }
 
 .menucircle {
-    background-color: var(--dark_gray);
+    background-color: var(--bkg_menu_circle);
     margin: 0;
     border: 5px solid white;
     border-radius: 50%;
@@ -28,15 +28,11 @@
 }
 
 .menucircle:hover,.menucircle:active {
-    background-color: var(--strong_gray);
-}
-
-.menucircle > svg {
-    color: white;
+    background-color: var(--bkg_menu_circle_hover);
 }
 
 .menutag {
-    background-color: var(--middle_gray);
+    background-color: var(--bkg_menu_tag);
     display: inline-block;
     width: 100%;
     border-radius: 25px;
@@ -63,10 +59,10 @@
     left: 0;
     z-index: 11;
     display: none;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: transparent;
   }
   
   .background_black_show {
     display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bkg_dark_block);
   }

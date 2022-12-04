@@ -2,7 +2,7 @@
 .menupopup-box-component {
     width: 80vw;
     height: 100vh;
-    background-color: var(--light_gray);
+    background-color: var(--bkg_popup_menu);
     z-index: 12;
     position: absolute;
     -webkit-transition-duration: 0.4s;
@@ -10,7 +10,7 @@
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     transform: translateX(-80vw) translateY(-10px);
-    border-right: 5px solid var(--shadow_blue);
+    border-right: 5px solid var(--bdr_popup_menu);
 }
 
 .menupopup-box-component-show {
@@ -25,7 +25,7 @@
     border: 0;
     padding: 15px;
     margin: 10px 5px;
-    background-color:rgba(0, 0, 0, 0.0);
+    background-color: transparent;
 }
 
 .menupopup-back > img {
@@ -40,25 +40,25 @@
 }
 
 .menupopup-box-items > a {
-    background-color: var(--light_gray);
+    background-color: var(--bkg_popup_menu_item);
     text-decoration: none;
     font-family: Share;
     font-weight: 700;
     font-size: large;
-    color: var(--strong_gray);
+    color: var(--clr_popup_menu_item);
     display: inline-block;
     width: 100%;
     padding: 15px 30px;
-    border-bottom: 2px solid var(--strong_gray);
+    border-bottom: 2px solid var(--bdr_popup_menu_item);
     transition: 0.2s;
 }
 
 .menupopup-box-items > a:first-of-type  {
-    border-top: 2px solid var(--strong_gray);
+    border-top: 2px solid var(--bdr_popup_menu_item);
 }
 
 .menupopup-box-items > a:hover, .menupopup-box-items > a:active {
-    background-color: var(--strong_gray);
+    background-color: var(--bkg_popup_menu_item_hover);
     color: white;
 }
 /* =============================== MENU ITEMS STYLE =============================== */

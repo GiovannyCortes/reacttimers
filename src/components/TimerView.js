@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import Timer from './Timer';
 
 /* SUBCOMPONENTES */
+import Menu from './Menu';
 import SalaPopUp from './SalaPopUp';
 
 export class TimerView extends Component {
@@ -37,6 +38,9 @@ export class TimerView extends Component {
                     )
                 }
                 <header>
+                <div className='noselect' style={{"marginTop":"10px"}}>
+                    <Menu />
+                </div>
                     <button className='mainsala noselect' onClick={ () => this.changeStatusSalaPopUp() }>
                         {this.state.room_name}
                     </button>

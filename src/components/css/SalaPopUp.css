@@ -3,12 +3,12 @@
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bkg_dark_block);
     transform: translateY(-10px);
 }
 
 .box-popup {
-    background-color: white;
+    background-color: var(--bkg_popup_salas);
     display: block;
     margin: 0 auto;
     padding: 5vw;
@@ -43,11 +43,11 @@
     border: none;
     padding: 10px 0;
     margin: 5px 0;
-    color: white;
+    color: var(--clr_popup_salas);
     font-family: Nexa;
     font-weight: 400;
     font-size: 25px;
-    box-shadow: 0 4px 0 1px rgb(192, 192, 192);
+    box-shadow: 0 4px 0 1px var(--btn_bottom_shw);
 }
 
 /* .popup-btn-sala:hover {
@@ -64,7 +64,7 @@
     position: absolute;
     top: -20px;
     right: -20px;
-    background-color: white;
+    background-color: var(--bkg_popup_salas);
     display: inline-block;
     border: 1px solid black;
     border-radius: 50%;
