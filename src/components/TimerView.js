@@ -39,6 +39,12 @@ export class TimerView extends Component {
                 }
                 <header>
                 <div className='noselect' style={{"marginTop":"10px"}}>
+                    {/* 
+                        Nota: (Gio) De momento estoy obteniendo resultados que no me gustan cuando inserto el menu
+                                    fuera de los componentes, en index.js. De momento se quedarán por separado en
+                                    cada componente. Una vez esté la App completada pasaré a intentar optimizar 
+                                    este tipo de resultados.
+                    */}
                     <Menu />
                 </div>
                     <button className='mainsala noselect' onClick={ () => this.changeStatusSalaPopUp() }>
